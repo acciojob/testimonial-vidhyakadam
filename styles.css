@@ -1,26 +1,25 @@
-/*  your css code here. If applicable */
-#container {
-  margin: 20px;
-  position: relative;
-  font-size: 20px;
+.testimonial-section {
+  padding: 40px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
 }
 
-#container::before,
-#container::after {
-  content: "SPECIAL TEXT";
-  color: #f00;
-  font-size: 20px;
-  position: absolute;
-  display: inline-block;
+.testimonial {
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: white;
+  flex: 0 0 calc(33.33% - 20px);
+  box-sizing: border-box;
 }
 
-#container::before {
-  top: 0;
-  left: -120px;
+.testimonial-text {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-#container::after {
-  bottom: 0;
-  right: -120px;
+.author {
+  text-align: right;
+  font-style: italic;
+  color: #777;
 }
-
